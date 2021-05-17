@@ -1,0 +1,1 @@
+# GalaxyS6-SM-G9200x
