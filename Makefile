@@ -6,6 +6,9 @@ NAME = TOSSUG Baby Fish
 
 export ANDROID_MAJOR_VERSION=n
 
+#Toolchains
+# git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b nougat-mr2.3-release
+
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
 # More info can be located in ./README
@@ -195,7 +198,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH            ?= arm64
-CROSS_COMPILE	?= /home/svirusx/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE	?= ${HOME}/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 CCACHE := ccache
 
 # Architecture as present in compile.h
